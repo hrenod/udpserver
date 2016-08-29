@@ -13,7 +13,7 @@ Use environments variables `UDP_IP` and `UDP_PORT` to configure the server.
 
 ## Run
 
-`docker-compose run`
+`docker-compose up`
 
 ## Test
 
