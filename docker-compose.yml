@@ -1,0 +1,18 @@
+version: '2'
+
+networks:
+  default:
+    driver: bridge
+
+services:
+  app:
+    ports:
+      - 5001:5005/udp
+    environment:
+      UDP_IP: 0.0.0.0
+      UDP_PORT: 5005
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    volumes:
+      - $PWD/app/:/srv/app

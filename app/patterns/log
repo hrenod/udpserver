@@ -1,0 +1,2 @@
+DATE_TIME %{MONTHDAY:day}/%{MONTHNUM:month}/%{YEAR:year} %{HOUR:hour}:%{MINUTE:minute}
+LOG \[%{DATE_TIME}\] (?<message>(.|\r|\n)*)
