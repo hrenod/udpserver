@@ -2,8 +2,9 @@
 
 The server parses the received messages and prints the timestamp and the message body in JSON to the stdout.
 
+Written in python3.5. Refer to [requirements.txt](requirements.txt) for dependencies versions.
+
 Messages are parsed with `pygrok`. Patterns are defined in [patterns](app/patterns/) directory. 
-Refer to [requirements.txt](requirements.txt) for dependencies versions.
 
 Use environments variables `UDP_IP` and `UDP_PORT` to configure the server.
 
